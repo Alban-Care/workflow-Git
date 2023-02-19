@@ -41,3 +41,14 @@ git checkout develop
 git merge feature/feature_branch
 ```
 
+## Branches de livraison
+
+Une fois que `develop` a acquis suffisament de fonctionnalités en vue d'une livraision, on creer une branche `release`. Plus aucune fonctionnalité ne sera ajoutée à cette branche elle sera uniquement dédiée aux corrections de bugs, à la génération de documentation et autres tâches de livraison.
+
+```bash
+# Se positionner sur la branch develop
+git switch develop
+# se positionner automatiquement après l'avoir crée sur la branche de release 0.1.0 (en la prefixant par "release/")
+git checkout -b release/0.1.0
+```
+
