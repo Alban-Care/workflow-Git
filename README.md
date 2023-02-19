@@ -29,3 +29,15 @@ git checkout -b feature/feature_branch
 ```bash
 git push
 ```
+
+### Terminer une branche de fonctionnalité
+
+Losque le travail de développement est terminé sur la fonctionnalité, l'étape suivante consiste à merger la branche `feature` dans la branche `develop`.
+
+```bash
+# Se positionner sur la branch develop
+git checkout develop
+# Merger la branch feature sur la branch develop
+git merge feature/feature_branch
+```
+
